@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F3F6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:text="Happy Sunday!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription,InefficientWeight" />
+                <TextView
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Dhiva Nirvana"
+                    android:textColor="#373737"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription,InefficientWeight" />
+                </LinearLayout>
+                <Button
+                    android:background="@drawable/profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/bg1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            tools:ignore="DisableBaselineAlignment">
+            <RelativeLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf" />
+            <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="#F1F1F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reminder Events"/>
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 Awaiting"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:clickable="true"
+                        android:textColor="#5141C5"
+                        android:background="@drawable/btn2"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="My Event"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf" />
+
+            <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:gravity="right"
+                        android:textSize="14sp"
+                        android:textColor="#F1F1F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Done Events"/>
+                    <TextView
+                        android:gravity="right"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8 Success"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:clickable="true"
+                        android:textColor="#FFF"
+                        android:background="@drawable/btn_detail"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detail"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popular Events"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#5141C5"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlHardcoded" />
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_see"
+            />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_popular"
+            android:scrollbars="horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DisableBaselineAlignment">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#373737"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latest Events"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#5141C5"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlHardcoded" />
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/btn_see"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+            <LinearLayout
+                android:background="@drawable/card_bawah"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/image3"
+                    android:layout_weight="1"
+                    android:background="@drawable/gunung"
+                    android:scaleType="centerCrop"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:textColor="#121212"
+                            android:text="Wen, 25 Jan 2021"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:textColor="#373737"
+                            android:text="Hiking in Kelud Mount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp">
+
+                        <ImageView
+                            android:clickable="true"
+                            android:background="@drawable/baseline_more_vert_black_18dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                tools:ignore="UselessLeaf" />
+
+            <LinearLayout
+                android:background="@drawable/card_bawah"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="60dp"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/gunung"
+                    android:scaleType="centerCrop"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:textColor="#121212"
+                            android:text="Mon, 01 Feb 2021"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="#373737"
+                            android:textSize="17dp"
+                            android:text="Hiking in Kelud Mount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp">
+
+                        <ImageView
+                            android:clickable="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/baseline_more_vert_black_18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

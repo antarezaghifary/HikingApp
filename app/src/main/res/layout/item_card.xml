@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/rush"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/foto1"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        tools:ignore="NestedWeights">
+
+        <ImageView
+            android:layout_gravity="right"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fotonya"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/judul"
+                    android:textSize="22dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:text="Hiking in Arjuna Mount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#FFF"
+                    android:text="Mon, 21 Agt 2021"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
