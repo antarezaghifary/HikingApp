@@ -1,9 +1,11 @@
 package com.project.hikingapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,6 +35,13 @@ public class ListPopulerAdapter extends RecyclerView.Adapter<ListPopulerAdapter.
         final PopulerModel model = populerModels.get(position);
         holder.judul.setText(model.getJudul());
         holder.tanggal.setText(model.getTanggal());
+        holder.ly_det.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DetailActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -42,11 +51,13 @@ public class ListPopulerAdapter extends RecyclerView.Adapter<ListPopulerAdapter.
 
     class ListViewHolder extends RecyclerView.ViewHolder {
         TextView judul, tanggal;
+        LinearLayout ly_det;
 
         ListViewHolder(View itemView) {
             super(itemView);
             judul = itemView.findViewById(R.id.judul);
             tanggal = itemView.findViewById(R.id.tanggal);
+            ly_det = itemView.findViewById(R.id.rush);
         }
     }
 }
